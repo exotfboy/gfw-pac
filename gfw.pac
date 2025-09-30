@@ -1,4 +1,4 @@
-var proxy = "PROXY 127.0.0.1:3128";
+var proxy = "PROXY 127.0.0.1:808";
 
 var direct = 'DIRECT';
 
@@ -144,7 +144,7 @@ function FindProxyForURL(url, host) {
     }
 
     debug('未命中任何规则', host, ip);
-    return proxy;
+    return direct;
 }
 
 var allowAlert = true
